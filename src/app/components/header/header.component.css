@@ -1,0 +1,25 @@
+.header {
+  background: blue;
+  color: snow;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right {
+  margin-right: 20px;
+}
+
+.auth {
+  display: flex;
+}
+
+.auth div {
+  margin-left: 20px;
+}
+
+.auth div:hover {
+  cursor: pointer;
+}
+

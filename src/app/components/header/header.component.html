@@ -1,0 +1,9 @@
+<div class="header">
+  <div *ngIf="!username" class="right auth">
+    <div (click)="login()">Login</div>
+    <div (click)="register()">Register</div>
+  </div>
+  <div *ngIf="username" class="right">
+    {{username}}
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<form [formGroup]="form">
+  <div><label>username: <input type="text" formControlName="username"></label></div>
+  <div><label>password: <input type="password" formControlName="password"></label></div>
+  <div><label>password: <input type="password" formControlName="re_password"></label></div>
+  <div *ngIf="form.errors.passError && form.controls.re_password.touched">passwords isn`t same</div>
+  <button (click)="register(form)">Register</button>
+</form>

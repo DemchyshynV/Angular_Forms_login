@@ -1,0 +1,6 @@
+<form [formGroup]="form">
+  <div><label>username: <input type="text" formControlName="username"></label></div>
+  <div><label>password: <input type="password" formControlName="password"></label></div>
+  <div *ngIf="error">login or password is incorrect</div>
+  <button (click)="login(form)">Login</button>
+</form>
